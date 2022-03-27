@@ -1,1 +1,1 @@
-# GLO-Akademy
+# GLO-Akademy Учебный проект.
