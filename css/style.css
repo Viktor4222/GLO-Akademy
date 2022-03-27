@@ -1,3 +1,23 @@
+/* подключаем локальные шрифты */
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/roboto/Roboto-Regular.eot");
+    src: local("Roboto"), local("Roboto-Regular"),
+        url("/fonts/roboto/Roboto-Regular.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/roboto/Roboto-Regular.woff") format("woff"),
+        url("/fonts/roboto/Roboto-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/roboto/Roboto-Bold.eot");
+    src: local("Roboto"), local("Roboto-Bold"), url("/fonts/roboto/Roboto-Bold.eot?#iefix") format("embedded-opentype"),
+        url("/fonts/roboto/Roboto-Bold.woff") format("woff"), url("/fonts/roboto/Roboto-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
 *,
 *::after,
 *::before {
@@ -6,6 +26,7 @@
 
 html,
 body {
+    font-family: "Roboto", sans-serif;
     font-size: 62.5%;
     font-weight: normal;
     color: #ffffff;
@@ -39,6 +60,7 @@ input {
     border: none;
     cursor: pointer;
 }
+
 .container {
     width: 130rem;
     margin: 0 auto;
@@ -77,12 +99,16 @@ input {
 
 .header__nav a {
     font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
 }
 
 .header__button {
     margin-left: 55.3rem;
     background-image: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
     font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 150%;
 }
 
 .button {
@@ -104,6 +130,7 @@ input {
 
 .main-display .container {
     position: relative;
+    padding-bottom: 22.8rem;
     z-index: 10;
 }
 
@@ -111,6 +138,8 @@ input {
     max-width: 76rem;
     margin-bottom: 5rem;
     font-size: 6.4rem;
+    font-weight: 700;
+    line-height: 140%;
 }
 
 .main-display__timer {
@@ -134,14 +163,114 @@ input {
 
 .timer__count {
     font-size: 3.6rem;
+    font-weight: 700;
+    line-height: 140%;
 }
 
 .timer__text {
     font-size: 1.6rem;
+    line-height: 140%;
     opacity: 0.4;
 }
 
 .main-dispay__button {
     background-image: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
     font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+.work {
+    padding: 20rem 24.3rem;
+}
+
+.work__wrap {
+    display: flex;
+}
+
+.work__img {
+    width: 52.6rem;
+    height: 49.9rem;
+    margin-right: 13.9rem;
+}
+
+.work__text {
+    max-width: 63.6rem;
+    padding-top: 6.9rem;
+}
+
+.work__header {
+    margin-bottom: 4.5rem;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+}
+
+.work__description {
+    font-size: 1.6rem;
+    line-height: 160%;
+}
+
+.process {
+    padding-bottom: 20rem;
+    position: relative;
+}
+
+.process__img {
+    width: 9rem;
+    height: 4.5rem;
+    margin-right: 2rem;
+}
+
+.process__header {
+    margin-bottom: 4.9rem;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+}
+
+.process__title {
+    display: flex;
+}
+
+.process__description {
+    max-width: 41.1rem;
+    margin-bottom: 8rem;
+    font-weight: 400;
+    font-size: 1.6rem;
+    line-height: 160%;
+    opacity: 0.5;
+}
+
+.process__columns {
+    display: flex;
+}
+
+.process__columns::after {
+    content: "";
+    display: block;
+    width: 130rem;
+    height: 0.2rem;
+    position: absolute;
+    top: 31rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+}
+
+.process__item {
+    max-width: 30.6rem;
+}
+
+.process__work {
+    margin-bottom: 6.5rem;
+    font-weight: 700;
+    font-size: 3.6rem;
+    line-height: 140%;
+}
+
+.process__text {
+    font-size: 1.4rem;
+    line-height: 160%;
+    opacity: 0.5;
 }
