@@ -66,6 +66,10 @@ input {
     margin: 0 auto;
 }
 
+:root {
+    --text-size-medium: 1.6rem;
+}
+
 .header {
     position: absolute;
     top: 0;
@@ -98,7 +102,7 @@ input {
 }
 
 .header__nav a {
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     font-weight: 400;
     line-height: 150%;
 }
@@ -106,7 +110,7 @@ input {
 .header__button {
     margin-left: 55.3rem;
     background-image: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     font-weight: 400;
     line-height: 150%;
 }
@@ -168,14 +172,14 @@ input {
 }
 
 .timer__text {
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 140%;
     opacity: 0.4;
 }
 
 .main-dispay__button {
     background-image: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     font-weight: 700;
     line-height: 150%;
 }
@@ -207,13 +211,17 @@ input {
 }
 
 .work__description {
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 160%;
 }
 
 .process {
     padding-bottom: 20rem;
     position: relative;
+}
+
+.process .process__img {
+    transform: rotate(45deg);
 }
 
 .process__img {
@@ -224,6 +232,7 @@ input {
 
 .process__header {
     margin-bottom: 4.9rem;
+    padding-top: 1rem;
     font-weight: 700;
     font-size: 4.8rem;
     line-height: 140%;
@@ -237,7 +246,7 @@ input {
     max-width: 41.1rem;
     margin-bottom: 8rem;
     font-weight: 400;
-    font-size: 1.6rem;
+    font-size: var(--text-size-medium);
     line-height: 160%;
     opacity: 0.5;
 }
@@ -273,4 +282,187 @@ input {
     font-size: 1.4rem;
     line-height: 160%;
     opacity: 0.5;
+}
+
+.command {
+    padding-bottom: 20rem;
+}
+
+.command__title {
+    margin-bottom: 11.9rem;
+}
+
+.command__header {
+    margin-bottom: 0;
+}
+
+.command__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 11rem;
+}
+
+.command__img {
+    width: 19rem;
+    height: 19rem;
+    margin-bottom: 4rem;
+}
+
+.command__img img {
+    border-radius: 50%;
+}
+
+.command__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.command__name {
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 140%;
+}
+
+.command__professional {
+    margin-bottom: 3rem;
+    font-size: var(--text-size-medium);
+    line-height: 160%;
+}
+
+.command__link {
+    font-size: 1.6rem;
+    line-height: 150%;
+    border: 0.1rem solid #ffffff;
+}
+
+.assembly {
+    margin-bottom: 24.4rem;
+}
+
+.assembly__wrap,
+.block__center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.assembly__header {
+    margin-bottom: 3rem;
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+}
+
+.assembly__description {
+    margin-bottom: 4.52rem;
+    font-size: var(--text-size-medium);
+    line-height: 160%;
+}
+
+.assembly__button {
+    margin-bottom: 5.08rem;
+    background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+    font-weight: 700;
+    font-size: var(--text-size-medium);
+    line-height: 150%;
+}
+
+.assembly__social {
+    display: flex;
+}
+
+.assembly__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+    border-radius: 50%;
+}
+
+.assembly__item:not(:last-child) {
+    margin-right: 3rem;
+}
+
+.assembly__item img {
+    width: 50%;
+    height: 50%;
+}
+
+.modal {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
+    padding: 3rem 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.modal__inner {
+    position: relative;
+    width: 66.3rem;
+    padding: 9rem 1rem;
+    background: #2c2c2c;
+    text-align: center;
+}
+
+.modal__header {
+    font-weight: 700;
+    font-size: 4.8rem;
+    line-height: 140%;
+    margin-bottom: 1rem;
+}
+
+.modal__subheader {
+    margin-bottom: 2.8rem;
+    font-size: 1.6rem;
+    line-height: 160%;
+    opacity: 0.5;
+}
+
+.modal__elements {
+    width: 45.4rem;
+    margin: 0 auto 3.2rem auto;
+}
+
+.modal__item {
+    height: 4.4rem;
+}
+
+.modal__item:not(:nth-child(3)) {
+    margin-bottom: 1.8rem;
+}
+
+.modal__input {
+    width: 100%;
+    height: 100%;
+    background-color: grey;
+    border-radius: 5rem;
+    font-size: 1.4rem;
+    line-height: 160%;
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.modal__close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+.noscroll {
+    overflow: hidden;
+    height: 100%;
 }
